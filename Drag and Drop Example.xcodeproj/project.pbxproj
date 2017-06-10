@@ -12,7 +12,9 @@
 		822549911EEBF2C8008F689C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8225498F1EEBF2C8008F689C /* Main.storyboard */; };
 		822549931EEBF2C8008F689C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822549921EEBF2C8008F689C /* Assets.xcassets */; };
 		822549961EEBF2C8008F689C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822549941EEBF2C8008F689C /* LaunchScreen.storyboard */; };
-		822549A11EEBF2C8008F689C /* Drag_and_Drop_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822549A01EEBF2C8008F689C /* Drag_and_Drop_ExampleTests.swift */; };
+		822549AE1EEC510D008F689C /* Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822549AD1EEC510D008F689C /* Shuffle.swift */; };
+		822549B21EEC536B008F689C /* DropInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822549B11EEC536B008F689C /* DropInteraction.swift */; };
+		822549B41EEC5676008F689C /* DragInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822549B31EEC5676008F689C /* DragInteraction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +36,9 @@
 		822549951EEBF2C8008F689C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		822549971EEBF2C8008F689C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8225499C1EEBF2C8008F689C /* Drag and Drop ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drag and Drop ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		822549A01EEBF2C8008F689C /* Drag_and_Drop_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drag_and_Drop_ExampleTests.swift; sourceTree = "<group>"; };
-		822549A21EEBF2C8008F689C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822549AD1EEC510D008F689C /* Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuffle.swift; sourceTree = "<group>"; };
+		822549B11EEC536B008F689C /* DropInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropInteraction.swift; sourceTree = "<group>"; };
+		822549B31EEC5676008F689C /* DragInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragInteraction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				8225498A1EEBF2C8008F689C /* Drag and Drop Example */,
-				8225499F1EEBF2C8008F689C /* Drag and Drop ExampleTests */,
 				822549891EEBF2C8008F689C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,21 +81,15 @@
 			children = (
 				8225498B1EEBF2C8008F689C /* AppDelegate.swift */,
 				8225498D1EEBF2C8008F689C /* ViewController.swift */,
+				822549B31EEC5676008F689C /* DragInteraction.swift */,
+				822549B11EEC536B008F689C /* DropInteraction.swift */,
 				8225498F1EEBF2C8008F689C /* Main.storyboard */,
 				822549921EEBF2C8008F689C /* Assets.xcassets */,
 				822549941EEBF2C8008F689C /* LaunchScreen.storyboard */,
 				822549971EEBF2C8008F689C /* Info.plist */,
+				822549AD1EEC510D008F689C /* Shuffle.swift */,
 			);
 			path = "Drag and Drop Example";
-			sourceTree = "<group>";
-		};
-		8225499F1EEBF2C8008F689C /* Drag and Drop ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				822549A01EEBF2C8008F689C /* Drag_and_Drop_ExampleTests.swift */,
-				822549A21EEBF2C8008F689C /* Info.plist */,
-			);
-			path = "Drag and Drop ExampleTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8225498E1EEBF2C8008F689C /* ViewController.swift in Sources */,
+				822549B21EEC536B008F689C /* DropInteraction.swift in Sources */,
+				822549B41EEC5676008F689C /* DragInteraction.swift in Sources */,
+				822549AE1EEC510D008F689C /* Shuffle.swift in Sources */,
 				8225498C1EEBF2C8008F689C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				822549A11EEBF2C8008F689C /* Drag_and_Drop_ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5NS659YLFM;
 				INFOPLIST_FILE = "Drag and Drop Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ampatalas.Drag-and-Drop-Example";
@@ -360,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5NS659YLFM;
 				INFOPLIST_FILE = "Drag and Drop Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ampatalas.Drag-and-Drop-Example";
