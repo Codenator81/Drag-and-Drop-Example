@@ -8,9 +8,3 @@ Xcode 9, iOS 11, iPad
 
 ![potato](https://user-images.githubusercontent.com/4039445/27004998-eb8892d0-4e14-11e7-97bd-c8c7cb2943df.gif)
 ![monkey](https://user-images.githubusercontent.com/4039445/27004997-eb847ca4-4e14-11e7-8008-dff13528b9d3.gif)
-
-## Author
-[Homepage](http://ampatalas.com/)
-
-## License
-Available under the MIT license. See the LICENSE file for more info.
